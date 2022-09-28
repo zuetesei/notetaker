@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuetesei/notetaker.git"
+    "url": "git+https://git.heroku.com/notetaker-zue.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/zuetesei/notetaker/issues"
+    "url": "https://github.com/zuetesei/notetaker-zue/issues"
   },
-  "homepage": "https://github.com/zuetesei/notetaker#readme",
+  "homepage": "https://github.com/zuetesei/notetaker-zue#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
   }
