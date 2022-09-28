@@ -6,10 +6,11 @@ const uniqid = require('uniqid');
 
 // GET /notes should read the db.json file and return all saved notes as JSON.
 router.get('/api/notes', (req, res) => {
+    // const data = await fs.readFile("./db/db.json")
     fs.readFile("./db/db.json", (err, data) => {
         if (err) throw err;
-        console.log(JSON.parse(data));
-        res.json(data)
+        const notes = JSON.parse(data)
+        res.json(notes)
     })
 })
 
@@ -37,8 +38,21 @@ router.post('/api/notes', (req, res) => {
     })
 })
 
-
 // DELETE /notes/:id should receive a query parameter containing the id of a note to delete
+router.delete('/api/notes/:id', (req, res) => {
+    // read all the notes 
+    fs.readFile("./db/db.json", (err, data) => {
+        if (err) throw err;
+        let notes = JSON.parse(data)
+        notes = notes.filter(({ id }) => id !== req.params.id)
+        // console.log(id)
+        // console.log(notes)
+        res.json(notes)
 
+        fs.writeFile("./db/db.json", JSON.stringify(notes), (err) => {
+            if (err) throw err;
+        })
+    })
+})
 
 module.exports = router;

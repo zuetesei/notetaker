@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Nunito";
+}
+
+.navbar,
+.btn {
+  background-color: #CD5D67;
+}
+
+.navbar-brand,
+.btn {
+  color: #421820;
 }
 
 .save-note {
@@ -18,7 +31,7 @@ body {
 
 .note-textarea,
 .note-title {
-  color: #000000;
+  color: #421820;
   width: 100%;
   outline: none;
   border: none;
@@ -38,7 +51,7 @@ body {
 
 .note-title:read-only,
 .note-textarea:read-only {
-  color: #757575;
+  color: #E7B1B5;
 }
 
 .list-container .card {
