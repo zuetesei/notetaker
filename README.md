@@ -39,7 +39,7 @@ The challenge was to create the backend framework for an application called Note
 https://notetaker-zue.herokuapp.com/notes
 
 ## Credits
-Made with &hearts; by Zue. 
+Made with &hearts; by Zue. <br>
 Contributions by tutor Dan Sires (public/javascript) & Dom Stepek (delete route). 
 
 ## Licenses 
