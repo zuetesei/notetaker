@@ -40,7 +40,7 @@ https://notetaker-zue.herokuapp.com/notes
 
 ## Credits
 Made with &hearts; by Zue. <br>
-Contributions by tutor Dan Sires (public/javascript) & Dom Stepek (delete route). 
+Contributions by tutor Dan Sires (public/assets/js) & Dom Stepek (delete route). 
 
 ## Licenses 
 This project was created by Zuleika Tesei as part of the curriculum for the UC Davis Coding Boot Camp and Trilogy Education Services.
